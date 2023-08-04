@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">leanPro ver2</string>
+    <string name="create">Создать</string>
+    <string name="create_calculation_description">Создать новый расчет</string>
+    <string name="create_calculation">Создать новый расчет</string>
+    <string name="whats_new">Что нового?</string>
+    <string name="open">Открыть</string>
+    <string name="calculation_name_input">Название расчета</string>
+    <string name="uniqNameReq">Название должно быть уникальным</string>
+    <string name="yearPlan">Годовой план</string>
+    <string name="dayplan">Дневной план</string>
+    <string name="shutdowm">Плановая остановка линии</string>
+    <string name="workingDays">Рабочие дни</string>
+    <string name="notWorkingDays">Нерабочие дни</string>
+    <string name="coefficient">Коэфициент</string>
+    <string name="period">Время смены</string>
+    <string name="reglamentedBreaks">Регламентированные перерывы</string>
+    <string name="notReglamentedBreaks">Нерегламентированные перерывы</string>
+    <string name="periodCount">Кол-во смен</string>
+    <string name="clearWorkingTime">Чистое рабочее время</string>
+    <string name="tactTime">Время такта</string>
+    <string name="zoneName">Название рабочей зоны</string>
+    <string name="operationName">Название операции</string>
+    <string name="operations">Операции</string>
+    <string name="professions">Профессии</string>
+    <string name="profession">Профессия</string>
+    <string name="workersCount">Кол-во рабочих</string>
+    <string name="cycles">Кол-во циклов</string>
+    <string name="cycle_time">Время цикла</string>
+    <string name="create_zone">Создать новую зону</string>
+    <string name="working_time">Рабочее время на одно изедлие</string>
+    <string name="calculated_workers_count">Расчетное количество рабочих</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="durationUnits">
+        <item>Сек.</item>
+        <item>Мин.</item>
+        <item>Час.</item>
+        <item>Дн.</item>
+    </string-array>
+</resources>

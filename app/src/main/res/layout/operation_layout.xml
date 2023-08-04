@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="5dp"
+    app:cardBackgroundColor="@color/orange_50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/operationNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:layout_marginVertical="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:hint="@string/operationName"
+                android:paddingBottom="5dp"
+                android:textColorHint="@color/gray_700"
+                app:boxStrokeColor="@color/gray_700"
+                app:errorEnabled="false"
+                app:hintTextColor="@color/gray_700">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/operationNameTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray_700" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/expandButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:checkable="true"
+                app:chipBackgroundColor="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expandable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cyclesLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|top"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/cycles"
+                    android:textColorHint="@color/gray_700"
+                    app:boxStrokeColor="@color/gray_700"
+                    app:errorEnabled="false"
+                    app:hintTextColor="@color/gray_700">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/cyclesTextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="0dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_700" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/currentTimeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|top"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/cycle_time"
+                    android:textColorHint="@color/gray_700"
+                    app:boxStrokeColor="@color/gray_700"
+                    app:errorEnabled="false"
+                    app:hintTextColor="@color/gray_700">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/currentTimeTextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="0dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_700" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/currentTimeMeasureLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:textColorHint="@color/gray_700"
+                    app:boxStrokeColor="@color/gray_700"
+                    app:endIconDrawable="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    app:endIconMode="dropdown_menu"
+                    app:errorEnabled="true"
+                    app:hintTextColor="@color/gray_700">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/currentTimeMeasureTextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="0dp"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:inputType="none"
+                        android:text="Cек."
+                        android:textColorHint="@color/gray_700"
+                        app:simpleItems="@array/durationUnits" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/professionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|top"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/profession"
+                    android:textColorHint="@color/gray_700"
+                    app:boxStrokeColor="@color/gray_700"
+                    app:errorEnabled="false"
+                    app:hintTextColor="@color/gray_700">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/professionTextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="0dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_700" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/workersCountLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|top"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="1"
+                    android:hint="@string/workersCount"
+                    android:textColorHint="@color/gray_700"
+                    app:boxStrokeColor="@color/gray_700"
+                    app:errorEnabled="false"
+                    app:hintTextColor="@color/gray_700">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/workersCountTextField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="0dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_700" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

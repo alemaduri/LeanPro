@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigator"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:clickable="true"
+        android:elevation="3dp"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@drawable/calculation_navigation" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/structureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="5dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/addNewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="86dp"
+        android:contentDescription="@string/create_zone"
+        android:text="@string/create_zone"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/orange"
+
+        app:icon="@drawable/ic_baseline_create_24"
+        app:iconTint="@color/black"
+        app:strokeWidth="0dp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
